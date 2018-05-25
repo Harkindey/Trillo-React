@@ -35,7 +35,7 @@ class App extends Component {
             </div>
             <div className="user-nav__user">
               <img src='img/profile.jpeg' alt="" className="user-nav__user-photo" />
-              <span className="user-nav__user-name">Emmanuel</span>
+              <p className="user-nav__user-name">Emmanuel</p>
             </div>
           </nav>
         </header>
