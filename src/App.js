@@ -130,7 +130,7 @@ class App extends Component {
               </div>
               <div className="overview__rating">
                 <div className="overview__rating-average">8.6</div>
-                <div className="overview_rating-count">429 votes</div>
+                <div className="overview__rating-count">429 votes</div>
               </div>
             </div>
           </main>
