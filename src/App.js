@@ -42,7 +42,7 @@ class App extends Component {
         <div className="content">
           <nav className="sidebar">
             <ul className="side-nav">
-              <li className="side-nav__item">
+              <li className="side-nav__item side-nav__item--active">
                 <a href="#" className="side-nav__link">
                   <svg version="1.1" className="side-nav__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                     <title>home</title>
