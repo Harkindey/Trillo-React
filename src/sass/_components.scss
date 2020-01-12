@@ -4,9 +4,10 @@
     height: 3.25rem;
     margin-left: 2rem;
 }
+
 /////////////////////////////////////////////////////////
 // SEARCH
-.search{
+.search {
     flex: 0 0 40%;
 
     display: flex;
@@ -19,7 +20,7 @@
         background-color: var(--color-grey-light-2);
     }
 
-    &__input{
+    &__input {
         font-family: inherit;
         font-size: inherit;
         background-color: var(--color-grey-light-2);
@@ -28,7 +29,7 @@
         border-radius: 100px;
         width: 90%;
         transition: all .2s;
-        margin-right:-3.25rem;
+        margin-right: -3.25rem;
 
         &:focus {
             outline: none;
@@ -42,19 +43,19 @@
         }
     }
 
-    &__input:focus + &__button{
+    &__input:focus+&__button {
         background-color: var(--color-grey-light-3);
     }
 
-    &__button{
+    &__button {
         border: none;
         background-color: var(--color-grey-light-2);
 
-        &:focus{
+        &:focus {
             outline: none;
         }
 
-        &:active{
+        &:active {
             transform: translateY(2px);
         }
     }
@@ -66,14 +67,15 @@
     }
 
 }
+
 /////////////////////////////////////////////////////////
 // USER NAVIGATION
-.user-nav{
+.user-nav {
     display: flex;
     align-items: center;
     align-self: stretch;
 
-    & > * {
+    &>* {
         padding: 0 2rem;
         cursor: pointer;
         height: 100%;
@@ -81,7 +83,7 @@
         align-items: center;
     }
 
-    & > *:hover { 
+    &>*:hover {
         background-color: var(--color-grey-light-2);
     }
 
@@ -96,27 +98,29 @@
     }
 
     &__notification {
-            font-size: .8rem;
-            height: 1.75rem;
-            width: 1.75rem;
-            border-radius: 50%;
-            background-color: var(--color-primary);
-            color: #fff; ;
-            position: absolute;
-            top: 1.5rem;
-            right: 1.1rem;
-            
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        font-size: .8rem;
+        height: 1.75rem;
+        width: 1.75rem;
+        border-radius: 50%;
+        background-color: var(--color-primary);
+        color: #fff;
+        ;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.1rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    &__user-photo{
+    &__user-photo {
         height: 3.75rem;
         border-radius: 50%;
         margin-right: 1rem;
     }
-    &__user-name{
+
+    &__user-name {
         font-size: 1rem;
     }
 }
@@ -133,34 +137,36 @@
         margin: 0;
     }
 
-    &__item{
+    &__item {
         position: relative;
 
         &:not(:last-child) {
             margin-bottom: .5rem;
+
             @media only screen and (max-width: $bp-medium) {
-                margin: 0; 
+                margin: 0;
             }
         }
+
         @media only screen and (max-width: $bp-medium) {
-           flex: 1;
+            flex: 1;
         }
     }
 
     &__item::before {
         content: "";
         position: absolute;
-        top:0;
+        top: 0;
         left: 0;
         height: 100%;
         width: 3px;
         background-color: var(--color-primary);
         transform: scaleY(0);
-        transition: transform .2s, 
-                    width .4s cubic-bezier(1,0,0,1) .2s,
-                    background-color .1s;
+        transition: transform .2s,
+            width .4s cubic-bezier(1, 0, 0, 1) .2s,
+            background-color .1s;
     }
-    
+
     &__item:hover::before,
     &__item--active::before {
         transform: scaleY(1);
@@ -172,7 +178,7 @@
     }
 
     &__link:link,
-    &__link:visited{
+    &__link:visited {
         font-size: 1.6rem;
         color: var(--color-grey-light-1);
         text-decoration: none;
@@ -189,6 +195,7 @@
             justify-content: center;
             padding: 2rem
         }
+
         @media only screen and (max-width: $bp-small) {
             flex-direction: column;
             padding: 1.5rem .5rem;
@@ -199,7 +206,7 @@
         width: 1.75rem;
         height: 1.75rem;
         margin-right: 2rem;
-        fill: currentColor;  // this is the color of the parent elemnt or current elelment
+        fill: currentColor; // this is the color of the parent elemnt or current elelment
 
         @media only screen and (max-width: $bp-small) {
             margin-right: 0;
@@ -238,8 +245,8 @@
 /////////////////////////////////////////////////////////
 // HOTEL OVERVIEW
 
-.overview{
-    display: flex; 
+.overview {
+    display: flex;
     align-items: center;
     border-bottom: var(--line);
 
@@ -275,10 +282,10 @@
         vertical-align: center;
     }
 
-    &__icon-location{
+    &__icon-location {
         margin-right: .5rem;
     }
-    
+
     &__rating {
         background-color: var(--color-primary);
         color: #fff;
@@ -296,7 +303,7 @@
         }
     }
 
-    &__rating-average { 
+    &__rating-average {
         font-size: 2.25rem;
         font-weight: 300;
         margin-bottom: -3px;
@@ -319,14 +326,14 @@
 /////////////////////////////////////////////////////////
 // BUTTON INLINE
 
-.btn-inline{
+.btn-inline {
     border: none;
     color: var(--color-primary);
     font-size: inherit;
     border-bottom: 1px solid currentColor;
     padding-bottom: 2px;
     display: inline-block;
-    background-color: transparent; 
+    background-color: transparent;
     cursor: pointer;
     transition: all .2s;
 
@@ -339,7 +346,7 @@
         color: var(--color-grey-dark-1);
 
         span {
-            margin-left : 8px;
+            margin-left: 8px;
         }
     }
 
@@ -350,19 +357,19 @@
 }
 
 @keyframes pulsate {
-    0%{
+    0% {
         transform: scale(1);
-        box-shadow:none;
+        box-shadow: none;
     }
 
     50% {
         transform: scale(1.05);
-        box-shadow: 0 1rem 4rem rgba(0,0,0,.25)
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, .25)
     }
 
     100% {
         transform: scale(1);
-        box-shadow:none;
+        box-shadow: none;
     }
 }
 
@@ -410,7 +417,7 @@
             mask-size: cover;
             background-image: none;
         }
-        
+
     }
 }
 
@@ -425,7 +432,7 @@
     align-items: center;
 
 
-    &__count{
+    &__count {
         margin-right: auto;
     }
 
@@ -449,7 +456,7 @@
 /////////////////////////////////////////////////////////
 // REVIEWS
 
-.review{
+.review {
     background-color: #fff;
     box-shadow: var(--shadow-light);
     padding: 3rem;
@@ -468,8 +475,8 @@
         position: relative;
     }
 
-    &__user{
-        display:flex;
+    &__user {
+        display: flex;
         align-items: center;
     }
 
@@ -479,6 +486,7 @@
         border-radius: 50%;
         margin-right: 1.5rem;
     }
+
     &__user-box {
         margin-right: auto;
     }
@@ -492,7 +500,7 @@
 
     &__user-date {
         font-size: 1rem;
-        color: var(--color-grey-dark3); 
+        color: var(--color-grey-dark3);
     }
 
     &__rating {
@@ -548,7 +556,7 @@
     overflow: hidden;
     cursor: pointer;
 
-    &  > * {
+    &>* {
         display: inline-block;
         height: 100%;
         width: 100%;
@@ -556,7 +564,7 @@
     }
 
     &__visible {
-        padding: 2rem 7.5rem; 
+        padding: 2rem 7.5rem;
     }
 
     &__invisible {
@@ -571,11 +579,11 @@
     }
 
     &:hover &__visible {
-            transform: translateY(100%);
+        transform: translateY(100%);
     }
 
-    &:hover &__invisible{
-        top:0;
+    &:hover &__invisible {
+        top: 0;
     }
 
     &:focus {
